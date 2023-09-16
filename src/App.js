@@ -11,8 +11,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<States />} />
-        <Route path="/state" element={<Cities />} />
-        <Route path="/state/:city" element={<City />} />
+        <Route path="/:state" element={<Cities />} />
+        <Route path="/:state/:city" element={<City />} />
       </Routes>
     </div>
   );

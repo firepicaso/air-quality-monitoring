@@ -18,7 +18,11 @@ const City = () => {
 
   useEffect(() => {
     fetchData();
-  }, [fetchData]);
+  }, [fetchData, selectedState, selectedCity]);
+
+  if (!city || !city.current) {
+    return <div>Loading...</div>;
+  }
 
   const { current } = city;
 

@@ -24,10 +24,10 @@ const Cities = () => {
 
   return (
     <ul>
-      {cities.map(({ city }) => (
-        <li key={city}>
-          <Link to={`/${selectedState}/${city}`}>
-            {city}
+      {cities.map((city) => (
+        <li key={city.city}>
+          <Link to={`/${selectedState}/${city.city}`}>
+            {city.city}
           </Link>
         </li>
       ))}
