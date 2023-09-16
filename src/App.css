@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F94E89;
+  background-color: #f94e89;
   font-family: 'Gill Sans', sans-serif;
   width: 100vw;
 }
@@ -44,6 +44,15 @@ header {
   padding: 0.4rem;
 }
 
+.details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  background: #d42b74c0;
+  padding: 1rem 1rem;
+}
+
 .cards li:nth-child(4n+1) {
   background: #d6528bb7;
 }
@@ -62,15 +71,6 @@ header {
 
 .details {
   padding: 1rem;
-}
-
-.details li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 2rem;
-  background: #d42b74c0;
-  padding: 1rem 1rem;
 }
 
 .details li:nth-child(even) {
