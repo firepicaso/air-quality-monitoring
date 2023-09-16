@@ -61,12 +61,12 @@ const States = () => {
     }
 
     return (
-      <ul>
+      <ul className="cards">
         {filteredStates.map((state) => (
           <li key={state.state}>
+            <FaArrowRight className="arrow-right" />
             <Link to={`/${state.state}`}>
               <span>{state.state}</span>
-              <FaArrowRight />
             </Link>
           </li>
         ))}
@@ -76,7 +76,7 @@ const States = () => {
 
   return (
     <div>
-      <nav>
+      <nav className="nav">
         <h2>Canadian States</h2>
         <Search onSearch={handleSearch} />
       </nav>

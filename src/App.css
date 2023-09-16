@@ -1,3 +1,92 @@
-.App {
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F94E89;
+  font-family: 'Gill Sans', sans-serif;
+  width: 100vw;
+}
+
+header {
+  padding: 1rem;
+  margin: 0;
   text-align: center;
+  font-size: 0.6rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.nav h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cards li {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-around;
+  height: 6rem;
+  width: 9rem;
+  border: 0.5px solid rgb(124, 124, 124);
+  background: #d42b74c0;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.4rem;
+}
+
+.cards li:nth-child(4n+1) {
+  background: #d6528bb7;
+}
+
+.cards li:nth-child(4n+2) {
+  background: #d42b74c0;
+}
+
+.cards li:nth-child(4n+3) {
+  background: #d42b74c0;
+}
+
+.cards li:nth-child(4n+4) {
+  background: #d6528bb7;
+}
+
+.details {
+  padding: 1rem;
+}
+
+.details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  background: #d42b74c0;
+  padding: 1rem 1rem;
+}
+
+.details li:nth-child(even) {
+  background: #d6528bb7;
+}
+
+.arrow-right {
+  /* position: absolute; */
+  top: 0.5rem;
+  right: 0.5rem;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 1.5%;
+}
+
+.search {
+  display: flex;
+  align-self: center;
 }

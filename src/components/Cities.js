@@ -63,12 +63,12 @@ const Cities = () => {
       );
     }
     return (
-      <ul className="items">
+      <ul className="cards">
         {filteredCities.map((city) => (
           <li key={city.city}>
+            <FaArrowRight className="arrow-right" />
             <Link to={`/${selectedState}/${city.city}`}>
               <span>{city.city}</span>
-              <FaArrowRight className="arrow-right" />
             </Link>
           </li>
         ))}
@@ -78,7 +78,7 @@ const Cities = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="nav">
         <Link to="/" className="back">
           <FaAngleLeft className="arrow-left" />
         </Link>

@@ -11,7 +11,7 @@ const Search = ({ onSearch }) => {
   };
 
   return (
-    <div className="search-container">
+    <div className="search">
       <input
         type="text"
         placeholder="Search..."
