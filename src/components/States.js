@@ -19,7 +19,7 @@ const States = () => {
 
   return (
     <ul>
-      {states.map(({state}) => (
+      {states.map(({ state }) => (
         <li key={state}>
           <Link to={`/${state}`}>
             {state}

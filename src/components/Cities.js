@@ -1,7 +1,7 @@
-import { API_URL, API_KEY } from '../api';
 import React, { useCallback, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
+import { API_URL, API_KEY } from '../api';
 import { setCities } from '../redux/cities/citiesSlice';
 
 const Cities = () => {
@@ -24,7 +24,7 @@ const Cities = () => {
 
   return (
     <ul>
-      {cities.map(({city}) => (
+      {cities.map(({ city }) => (
         <li key={city}>
           <Link to={`/${selectedState}/${city}`}>
             {city}
