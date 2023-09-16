@@ -29,14 +29,33 @@ const City = () => {
       <div>
         <div>
           <h3>Weather Details</h3>
-          <p>Temperature:{current.weather.tp}°C</p>
-          <p>Pressure:{current.weather.pr} hPa</p>
-          <p>Humidity:{current.weather.hu}%</p>
+          <p>
+            Temperature:
+            {current.weather.tp}
+            °C
+          </p>
+          <p>
+            Pressure:
+            {current.weather.pr}
+            {' '}
+            hPa
+          </p>
+          <p>
+            Humidity:
+            {current.weather.hu}
+            %
+          </p>
         </div>
         <div>
           <h3>Pollution Data</h3>
-          <p>Air Quality Index (AQI):{current.pollution.aqius}</p>
-          <p>Main Pollutant:{current.pollution.mainus}</p>
+          <p>
+            Air Quality Index (AQI):
+            {current.pollution.aqius}
+          </p>
+          <p>
+            Main Pollutant:
+            {current.pollution.mainus}
+          </p>
         </div>
       </div>
     </div>

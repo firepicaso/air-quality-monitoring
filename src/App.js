@@ -1,8 +1,8 @@
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import States from './components/States';
 import Cities from './components/Cities';
 import City from './components/City';
-import { Routes, Route } from 'rect-router-dom';
 import './App.css';
 
 function App() {
