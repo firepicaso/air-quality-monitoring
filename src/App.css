@@ -89,4 +89,5 @@ header {
 .search {
   display: flex;
   align-self: center;
+  color: black;
 }

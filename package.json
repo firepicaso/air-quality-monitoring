@@ -1,6 +1,7 @@
 {
   "name": "air-quality-monitoring",
   "version": "0.1.0",
+  "homepage": "https://firepicaso.github.io/air-quality-monitoring",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -52,6 +55,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.0.0",
     "redux-mock-store": "^1.5.4",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",

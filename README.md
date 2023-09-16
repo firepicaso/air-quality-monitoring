@@ -65,7 +65,7 @@ We are using HTML, CSS, Javascript, React, and Redux in this project.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-https://firepicaso.github.io/air-quality-monitoring/public/
+https://firepicaso.github.io/air-quality-monitoring/build/
 
 ## Loom Walkthrough
 
