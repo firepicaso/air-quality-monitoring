@@ -54,11 +54,12 @@ const City = () => {
     return (
       <div>
         <nav className="nav">
-          <FaAngleLeft className="arrow-left" />
-          <Link to={`/${selectedState}`} className="back" />
+          <Link to={`/${selectedState}`} className="back">
+            <FaAngleLeft className="arrow-left" />
+          </Link>
           <h2>{`${selectedCity} city`}</h2>
         </nav>
-        <p>Weather and air pollution data</p>
+        <p>Weather and air pollution details</p>
         <ul className="details">
           <li className="title">
             Weather Details
